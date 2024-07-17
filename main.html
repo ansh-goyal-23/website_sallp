@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Screenshot 2024-05-14 060328.png" alt="Logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">&#9776;</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Team</a>
+            </div>
+        </div>
+        <a href="#" class="cta"><button>Contact Us</button></a>
+    </header>
+
+    <div class="main">
+        <img class="drone-img" src="C:\Users\hp\Downloads\Firefly orange grey drone with no background 13674.jpg" alt="Drone">
+        <div class="text1">
+            <h1>Revolutionizing drone technology for a better future</h1>
+            <a href="#" class="cta"><button>Contact Us</button></a>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <img class="bottom-image" src="Firefly Unleash the Power of Our Advance Drones Our drones are designed to redifine what’s possible .jpg" alt="Bottom Image" onclick="showNewPage()">
+    </div>
+
+    <div class="new-page" id="newPage">
+        <div class="new-text">
+            <h1>New Page Text Area</h1>
+            <p>This is the text area on the new page.</p>
+        </div>
+        <img class="new-image" src="Firefly Unleash the Power of Our Advance Drones Our drones are designed to redifine what’s possible .jpg" alt="New Image">
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function showNewPage() {
+            document.querySelector('.main').style.display = 'none';
+            document.querySelector('.image-section').style.display = 'none';
+            document.getElementById('newPage').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

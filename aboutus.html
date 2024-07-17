@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<style>
+    .content {
+            padding-top: 100px;
+            text-align: justify;
+            padding-right: 20px;
+            padding-left: 20px;
+            background-color: azure;
+        }
+    .content h1{
+        margin-bottom: 15px;
+        text-decoration: underline;
+        text-align: center;
+        background-color: azure;
+    }    
+    .content p{
+        font-size: x-large;
+        text-align: auto;
+        background-color: azure;
+    }
+    .customization-section {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.customization-section h2 {
+    
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.customization-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.customization-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.customization-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.customization-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.customization-text li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.customization-text li strong {
+    font-weight: 600;
+}
+
+.customization-image {
+    flex: 1;
+    text-align: center;
+}
+
+.customization-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.maintenance-section {
+    text-align: left;
+    padding: 50px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.maintenance-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.maintenance-image {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.maintenance-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.maintenance-text {
+    flex: 2;
+}
+
+.maintenance-text h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.maintenance-text p {
+    margin-bottom: 20px;
+}
+
+.affordable-section {
+    text-align: left;
+    padding: 50px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.affordable-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordable-text {
+    flex: 2;
+}
+
+.affordable-text h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.affordable-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.affordable-text li {
+    margin-bottom: 20px;
+}
+
+.affordable-image {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.affordable-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mastery-section {
+    text-align: left;
+    padding: 50px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mastery-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mastery-text {
+    flex: 2;
+}
+
+.mastery-text h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mastery-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mastery-text li {
+    margin-bottom: 20px;
+}
+
+.mastery-image {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.mastery-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="header-left">
+            <img class="logo" src="Screenshot 2024-05-14 060328.png" alt="Logo">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html#product-section">Product</a>
+                    <a href="#">About Us</a>
+                    <a href="index.html#team-section">Team</a>
+                    <a href="index.html#footer" class="cta"><button>Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html#product-section">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="index.html#team-section">Team</a></li>
+            </ul>
+            <a href="index.html#footer" class="cta"><button>Contact Us</button></a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 >Beyond the Build</h1>
+        <p>At Skyrobee Aerolabs, we understand that your drone is more than just a
+            machine – it's a vital tool for achieving your mission. That's why our
+            commitment extends far beyond the manufacturing stage. We offer a
+            comprehensive suite of services designed to ensure your drone operates at peak
+            performance throughout its lifespan.</p>
+    </div> 
+    <section id="customization-section" class="customization-section">
+        <h2>Customization to Fit Your Needs</h2>
+        <div class="customization-content">
+            <div class="customization-text">
+                <p>We understand that a one-size-fits-all approach doesn't work for drones. That's why we offer a wide range of customization options to tailor your drone to your specific mission requirements.</p>
+                <ul>
+                    <li><strong>Camera Options:</strong> Equip your drone with the perfect vision for your needs. Choose from high-resolution cameras, thermal imaging systems, or hyperspectral sensors to gather the most critical data.</li>
+                    <li><strong>Payload Solutions:</strong> Need to carry additional equipment? We offer a variety of payload options to enhance your drone's capabilities, from specialized sensors to grippers for delivery applications.</li>
+                </ul>
+            </div>
+            <div class="customization-image">
+                <img src="Screenshot 2024-07-16 000011.png" alt="Customization">
+            </div>
+        </div>
+    </section>
+    <section id="affordable-section" class="affordable-section">
+        <div class="affordable-content">
+            <div class="affordable-text">
+                <h2>Affordable Excellence: Beyond the Price Tag</h2>
+                <ul>
+                    <li><strong>Flexible Payment Options:</strong> We offer flexible payment options to fit your needs, making it easier to acquire the perfect drone for your operations.</li>
+                    <li><strong>Long-Term Value:</strong> Skyrobee drones are built to last, with extended warranties and our AMS programs minimizing downtime and maximizing your return on investment. Our drones are an investment in your future success.</li>
+                </ul>
+            </div>
+            <div class="affordable-image">
+                <img src="Screenshot 2024-07-16 024332.png" alt="Affordable Excellence">
+            </div>
+        </div>
+    </section>
+    
+    <section id="maintenance-section" class="maintenance-section">
+        <div class="maintenance-content">
+            <div class="maintenance-image">
+                <img src="Screenshot 2024-07-16 024011.png" alt="Maintenance">
+            </div>
+            <div class="maintenance-text">
+                <h2>Keeping You Airborne: Annual Maintenance and Service (AMS)</h2>
+                <p>Our industry-leading AMS programs are tailored to your specific drone and operational needs. These comprehensive plans include routine inspections, preventative maintenance, and software updates, all performed by our team of certified technicians. By proactively addressing potential issues, AMS programs minimize downtime and ensure your drone is always mission-ready.</p>
+                <h2>Expert Repair Services: Getting You Back in the Air</h2>
+                <p>Even the most reliable drones may require repairs. Our team of certified technicians is equipped to handle all manner of repairs, using only genuine Skyrobee parts to ensure optimal performance and safety. We offer fast turnaround times to minimize disruption to your operations.</p>
+            </div>
+        </div>
+    </section>
+    <section id="mastery-section" class="mastery-section">
+        <div class="mastery-content">
+            <div class="mastery-text">
+                <h2>Investing in Your Mastery</h2>
+                <ul>
+                    <li><strong>Complimentary Pilot Training:</strong> Every Skyrobee drone purchase includes comprehensive pilot training led by our team of DGCA-approved experts. You'll gain the skills and confidence to operate your drone safely and effectively.</li>
+                    <li><strong>Dedicated Customer Support:</strong> Our journey doesn't end with the sale. Our dedicated customer support team is here to answer your questions and provide ongoing technical assistance throughout your drone ownership experience.</li>
+                </ul>
+            </div>
+            <div class="mastery-image">
+                <img src="Screenshot 2024-07-16 025042.png" alt="Investing in Your Mastery">
+            </div>
+        </div>
+    </section>
+    <div id="footer" class="footer" data-aos="fade-up">
+        <section class="main">
+          <div class="content">
+            <div class="contact-info-parent">
+              <div class="contact-info">
+                <div class="contact-details">
+                  <a class="address">Address:</a>
+                  <div class="phone">Phone:</div>
+                  <a class="email">Email:</a>
+                </div>
+                <div class="contact-details1">
+                  <div class="omkar-garden-fl">
+                    Omkar Garden, Fl G- 2/7 Wadgaon Bk Pune, Maharashtra
+                  </div>
+                  <div class="div">+84 1102 2703</div>
+                  <div class="aerolabsskyrobeein">aerolabs@skyrobee.in</div>
+                </div>
+              </div>
+              <img class="frame-child" loading="lazy" alt="Company Logo" src="Screenshot 2024-05-14 060328.png"/>
+            </div>
+            <div class="right-section">
+              <div class="newsletter-title-parent">
+                <div class="newsletter-title">
+                  <a class="newsletter"></a>
+                </div>
+                <div class="formelement-parent">
+                  <div class="formelement">
+                    <input class="place-holder" placeholder="Your email here" type="text"/>
+                  </div>
+                  <button class="button">
+                    <a class="learn-more">Subscribe</a>
+                  </button>
+                </div>
+              </div>
+              <div class="social-media">
+                <div class="social-media-content">
+                  <div class="social-media-icons">
+                    <div class="social">Social:</div>
+                  </div>
+                  <div class="social-icons">
+                    <div class="facebook-linked-in">
+                      <img class="akar-iconsfacebook-fill" loading="lazy" alt="Facebook" src="icons8-facebook-50.png"/>
+                    </div>
+                    <div class="facebook-linked-in1">
+                      <img class="entypo-sociallinkedin-with-ci-icon" loading="lazy" alt="LinkedIn" src="icons8-linkedin-48.png"/>
+                    </div>
+                    <img class="entypo-socialtwitter-with-cir-icon" loading="lazy" alt="Twitter" src="6812908086_5e97ea4ff8_q.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer1">
+          <div class="skyrobee-aerolabs-company">
+            Skyrobee Aerolabs Company © 2024. All Rights Reserved
+          </div>
+        </section>
+      </div>
+</body>
+<script>
+    function toggleDropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="2ndpage.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="drone_feature.css">
+    <link rel="stylesheet" href="box_feature.css">
+    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="scrolltotop.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        /* Add this to your CSS */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img class="logo" src="Screenshot 2024-05-14 060328.png" alt="Logo">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">&#9776;</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#product-section">Product</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="#team-section">Team</a>
+                    <a href="#">Applications</a>
+                    <a href="#footer" class="cta"><button>Contact Us</button></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#product-section">Product</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#team-section">Team</a></li>
+                
+            </ul>
+            <a href="#footer" class="cta"><button>Contact Us</button></a>
+        </nav>
+    </header>
+    
+    <section class="slider_animation">
+        <div class="slider-wrapper">
+            <div id="semicircle" class="ellipse"><span class="typing-text">Skyrobee LLP Limited</span></div>
+            <div class="slider">
+                <div class="slide" id="slide-1">
+                    <img src="sander-weeteling-rLvCmdZrS4Y-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Performance</h2>
+                        <a href="aboutus.html"><button class="learn-more" >Learn More</button></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="lance-asper-es6AGN_aRdc-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Reliability</h2>
+                        <a href="aboutus.html"><button class="learn-more" >Learn More</button></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="ben-den-engelsen-DKkR5GAyd9I-unsplash.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Autonomy</h2>
+                        <a href="aboutus.html"><button class="learn-more" >Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+    <section id="content-section" class="content-section" data-aos="fade-up">
+        <div class="content-container">
+            <div class="text-content">
+                <h2 data-aos="fade-up">Unleash the Power of Our Advance Drones</h2>
+                <p data-aos="fade-up">Our drones are designed to redefine what's possible in the field of aerial technology. With industry-leading endurance, flight time, range, and payload capacity, our drones are built to excel in the most demanding scenarios.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon"><img src="new-moon.png" alt="" data-aos="fade-up"></div>
+                        <h3 data-aos="fade-up">Endurance</h3>
+                        <p data-aos="fade-up">Unmatched flight time that allows our drone to stay airborne longer and cover vast time.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><img src="new-moon.png" alt="" data-aos="fade-up"></div>
+                        <h3 data-aos="fade-up">Range</h3>
+                        <p data-aos="fade-up">Extended range capabilities, enabling our drones to reach remote locations with ease.</p>
+                    </div>
+                </div>
+                <a href="aboutus.html" class="learn-more" data-aos="fade-up">Learn More</a>
+            </div>
+            <img src="C:\Users\hp\OneDrive\Desktop\startup-drone\Firefly Unleash the Power of Our Advance Drones Our drones are designed to redifine what’s possible .jpg" alt="Drone Image" data-aos="fade-up">
+        </div>
+    </section>
+    <section  id="product-section" class="product-section" data-aos="fade-up">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="Screenshot_14-5-2024_224941_-removebg-preview.png" alt="ScoutX60" data-aos="fade-up">
+                <h3 data-aos="fade-up">ScoutX60</h3>
+                <button class="learn-more" data-aos="fade-up"  data-section="section1">Learn More</button>
+            </div>
+            <div class="product-card">
+                <img src="Screenshot_14-5-2024_224950_-removebg-preview.png" alt="Payload H30" data-aos="fade-up">
+                <h3 data-aos="fade-up">Payload H30</h3>
+                <button class="learn-more" data-aos="fade-up"  data-section="section2">Learn More</button>
+            </div>
+            <div class="product-card">
+                <img src="Screenshot_14-5-2024_224958_-removebg-preview (1).png" alt="Trainer x35" data-aos="fade-up">
+                <h3 data-aos="fade-up">Trainer x35</h3>
+                <button class="learn-more" data-aos="fade-up"  data-section="section3">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div id="section1" class="popup-section">
+                <img src="quadcopter-flying-nature.jpg" alt="SCOUT-X60 Image">
+                <h2>SCOUT-X60</h2>
+                <p>SCOUT-X60 is a compact, agile aerial vehicle equipped with advanced camera systems and sensors for monitoring and reconnaissance purposes. With real-time video transmission capabilities, it provides detailed and actionable intelligence to operators on the ground. The On Board Autonomous features offer flexibility and versatility in various mission scenarios. Its ability to gather actionable intelligence while minimizing the risk to human personnel, makes it an unparalleled accessory.</p>
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li>1 Hr+ Flight Time</li>
+                    <li>24 Km Endurance</li>
+                    <li>10 Km Range</li>
+                    <li>8 -12 m/s Cruise Speed</li>
+                    <li>2K Camera</li>
+                    <li>30x Zoom</li>
+                    <li>&lt; 5.4kg AUW</li>
+                </ul>
+                <div class="application_section">
+                    <h3>Applications</h3>
+                    <div class="application_item">
+                        <img src="Firefly MAPPING AND SURVEYING DRONE 62705.jpg" alt="Application 1 Image">
+                        <p><h3>Surveillance and MAPPING</h3></p>
+                    </div>
+                    <div class="application_item">
+                        <img src="pexels-kelly-1179532-4263072.jpg" alt="Application 2 Image">
+                        <p><h3>Security</h3></p>
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="popup-section">
+                <img src="quadcopter-flying-nature.jpg" alt="SCOUT-X60 Image">
+                <h2>Tyro X35</h2>
+                <p>Tyro X35 is a rugged drone designed for training purposes. With advanced stabilization,
+                    intuitive controls, and crash protection features, it's perfect for beginners and
+                    seasoned pilots alike. Master your skills with ease, knowing the Tyro X35 can handle
+                    any mishap, while still capturing stunning aerial footage with its built-in HD camera.</p>
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li>30 mins + Flight Time </li>
+                    <li>10 Km Endurance</li>
+                    <li>6 Km Range</li>
+                    <li>6 -10 m/s Cruise Speed</li>
+                    <li>1080p Camera</li>
+                    <li>Beginner Friendly</li>
+                    <li>&lt; 2 kg AUW</li>
+                </ul>
+                <div class="application_section">
+                    <h3>Applications</h3>
+                    <div class="application_item">
+                        <img src="Firefly MAPPING AND SURVEYING DRONE 62705.jpg" alt="Application 1 Image">
+                        <p><h3>Surveillance and MAPPING</h3></p>
+                    </div>
+                    <div class="application_item">
+                        <img src="pexels-kelly-1179532-4263072.jpg" alt="Application 2 Image">
+                        <p><h3>Security</h3></p>
+                    </div>
+                </div>
+            </div>
+            <div id="section3" class="popup-section">
+                <img src="quadcopter-flying-nature.jpg" alt="SCOUT-X60 Image">
+                <h2>Titan H35</h2>
+                <p>Titan H35 is a powerful drone built to handle payloads up to 5 kg, boasting a 30-minute
+                    flight time capability and equipped with a high-quality camera system. With advanced
+                    stability and precise navigation, it's perfect for industrial tasks like aerial surveys,
+                    infrastructure monitoring, and payload delivery.
+                    </p>
+                <h3>Technical Specifications</h3>
+                <ul>
+                    <li>35mins Flight Time</li>
+                    <li>10 Km Endurance</li>
+                    <li>12 Km Range</li>
+                    <li>6 -12 m/s Cruise Speed</li>
+                    <li>2K/4k Camera</li>
+                    <!-- <li>30x Zoom</li> -->
+                    <li>&lt; 28kg AUW</li>
+                </ul>
+                <div class="application_section">
+                    <h3>Applications</h3>
+                    <div class="application_item">
+                        <img src="Firefly MAPPING AND SURVEYING DRONE 62705.jpg" alt="Application 1 Image">
+                        <p><h3>Surveillance and MAPPING</h3></p>
+                    </div>
+                    <div class="application_item">
+                        <img src="pexels-kelly-1179532-4263072.jpg" alt="Application 2 Image">
+                        <p><h3>Security</h3></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="drone-feature-section" data-aos="fade-up">
+        <div class="drone-content-container">
+            <img src="Firefly tested in extreme weather conditions to high altitudes across India from deserts to glaciers.jpg" alt="Drone Image" class="drone-image">
+            <div class="drone-text-content">
+                <p>Our drones have an ergonomic design and have been tested in extreme weather conditions to high altitudes across India from deserts to glaciers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" data-aos="fade-up">
+        <div class="features-container">
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p data-aos="fade-up">Over 450,000 Flights</p>
+            </div>
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p class="features_tickmark" data-aos="fade-up">Indigenous design and technological capabilities</p>
+            </div>
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p class="features_tickmark" data-aos="fade-up">UAV platforms are architected with a 'mission first' approach</p>
+            </div>
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p class="features_tickmark" data-aos="fade-up">Equipped with industry leading specifications and capabilities</p>
+            </div>
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p class="features_tickmark" data-aos="fade-up">Vertically integrated operations</p>
+            </div>
+            <div class="feature-item" data-scroll >
+                <img src="accept.png" alt="Check Icon" data-aos="fade-up">
+                <p class="features_tickmark" data-aos="fade-up">Have one of the best support networks in India for UAVs</p>
+            </div>
+        </div>
+    </section>
+    <section id="application-section" class="application-section" data-aos="fade-up">
+        <h2 class="section-title">Our Applications</h2>
+        <div class="application-container">
+            <div class="application-item">
+                <img src="kal-visuals-Ve7iqUNkGsA-unsplash.jpg" alt="Application 1">
+                <div class="application-text" >
+                    
+                    <p data-aos="fade-up">Mapping and Surveying.</p>
+                    <a href="aboutus.html"><button>Learn More</button></a>
+                </div>
+            </div>
+            <div class="application-item">
+                <img src="delivery-robot-futuristic-environment.jpg" alt="Application 2">
+                <div class="application-text">
+                   
+                    <p data-aos="fade-up">Security and Surveillance</p>
+                    <a href="aboutus.html"><button>Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team-section" class="team-section" data-aos="fade-up">
+        <h2 class="section-title">Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Screenshot_14-5-2024_21396_.jpeg" alt="Team Member 1">
+                <div class="team-info">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="Screenshot_14-5-2024_213844_.jpeg" alt="Team Member 2">
+                <div class="team-info">
+                    <h3>Jane Smith</h3>
+                    <p>CTO</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="Screenshot_14-5-2024_213855_.jpeg" alt="Team Member 3">
+                <div class="team-info">
+                    <h3>Mike Johnson</h3>
+                    <p>CFO</p>
+                </div>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </section>
+    <div id="footer" class="footer" data-aos="fade-up">
+        <section class="main">
+          <div class="content">
+            <div class="contact-info-parent">
+              <div class="contact-info">
+                <div class="contact-details">
+                  <a class="address">Address:</a>
+                  <div class="phone">Phone:</div>
+                  <a class="email">Email:</a>
+                </div>
+                <div class="contact-details1">
+                  <div class="omkar-garden-fl">
+                    Omkar Garden, Fl G- 2/7 Wadgaon Bk Pune, Maharashtra
+                  </div>
+                  <div class="div">+84 1102 2703</div>
+                  <div class="aerolabsskyrobeein">aerolabs@skyrobee.in</div>
+                </div>
+              </div>
+              <img class="frame-child" loading="lazy" alt="Company Logo" src="Screenshot 2024-05-14 060328.png"/>
+            </div>
+            <div class="right-section">
+              <div class="newsletter-title-parent">
+                <div class="newsletter-title">
+                  <a class="newsletter"></a>
+                </div>
+                <div class="formelement-parent">
+                  <div class="formelement">
+                    <input class="place-holder" placeholder="Your email here" type="text"/>
+                  </div>
+                  <button class="button">
+                    <a class="learn-more">Subscribe</a>
+                  </button>
+                </div>
+              </div>
+              <div class="social-media">
+                <div class="social-media-content">
+                  <div class="social-media-icons">
+                    <div class="social">Social:</div>
+                  </div>
+                  <div class="social-icons">
+                    <div class="facebook-linked-in">
+                      <img class="akar-iconsfacebook-fill" loading="lazy" alt="Facebook" src="icons8-facebook-50.png"/>
+                    </div>
+                    <div class="facebook-linked-in1">
+                      <img class="entypo-sociallinkedin-with-ci-icon" loading="lazy" alt="LinkedIn" src="icons8-linkedin-48.png"/>
+                    </div>
+                    <img class="entypo-socialtwitter-with-cir-icon" loading="lazy" alt="Twitter" src="6812908086_5e97ea4ff8_q.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer1">
+          <div class="skyrobee-aerolabs-company">
+            Skyrobee Aerolabs Company © 2024. All Rights Reserved
+          </div>
+        </section>
+      </div>
+      
+      <button id="scrollToTopBtn" title="Go to top">^</button>
+     
+      <script>
+        var modal = document.getElementById("popupModal");
+        var btns = document.querySelectorAll(".learn-more");
+        var span = document.getElementsByClassName("close")[0];
+        var sections = document.querySelectorAll(".popup-section");
+
+        btns.forEach(btn => {
+            btn.onclick = function() {
+                var sectionId = btn.getAttribute("data-section");
+                sections.forEach(section => {
+                    section.classList.remove("active");
+                });
+                document.getElementById(sectionId).classList.add("active");
+                modal.style.display = "block";
+            }
+        });
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+      <script>
+        AOS.init();
+        window.addEventListener('load', AOS.refresh);
+    </script>
+
+      <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a, .dropdown-content a').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+    
+        // Scroll to Top Button functionality
+        var mybutton = document.getElementById("scrollToTopBtn");
+    
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    
+        mybutton.addEventListener("click", function() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        });
+      </script>
+      <script>
+        // Toggle dropdown menu
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+      
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
+    const teamMembers = document.querySelectorAll('.team-member');
+    const totalMembers = teamMembers.length;
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    function showMember(index) {
+        teamMembers.forEach((member, i) => {
+            member.classList.remove('active');
+            if (i === index) {
+                member.classList.add('active');
+            }
+        });
+    }
+
+    function showNextMember() {
+        currentIndex = (currentIndex + 1) % totalMembers;
+        showMember(currentIndex);
+    }
+
+    function showPrevMember() {
+        currentIndex = (currentIndex - 1 + totalMembers) % totalMembers;
+        showMember(currentIndex);
+    }
+
+    nextButton.addEventListener('click', showNextMember);
+    prevButton.addEventListener('click', showPrevMember);
+
+    // Automatically switch to the next member every 5 seconds
+    setInterval(showNextMember, 5000);
+
+    // Initialize the first member as active
+    showMember(currentIndex);
+});
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const featureItems = document.querySelectorAll('.feature-item');
+
+    const callback = function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+        threshold: 0.1
+    });
+
+    featureItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            function showNextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                const offset = currentIndex * slides[0].clientWidth;
+                document.querySelector('.slider').scrollTo({
+                    left: offset,
+                    behavior: 'smooth'
+                });
+            }
+
+            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        });
+    </script>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
+    <script>
+       $(window).bind('scroll', function() {
+            var secondPageTop = $('.content-section').offset().top;
+            if ($(window).scrollTop() > secondPageTop - $(window).height()) {
+                $('#semicircle').hide();
+            } else {
+                $('#semicircle').show();
+            }
+        })
+    </script>
+</body>
+</html>

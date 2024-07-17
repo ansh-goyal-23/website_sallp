@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team-section {
+    padding: 4rem 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.team-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.team-member.active {
+    opacity: 1;
+    position: relative;
+}
+
+.team-member img {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.25);
+}
+
+.team-info {
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 90%; /* Make sure it fits within the container */
+    text-align: center;
+}
+
+.team-info h3, .team-info p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.slider-controls {
+    margin-top: 1rem;
+}
+
+.slider-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
